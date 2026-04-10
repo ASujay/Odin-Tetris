@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch ${workspaceFolderBasename}/app",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/app",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "preLaunchTask": "Odin Build",
+            "linux": {
+                "MIMode": "lldb"
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
+        },
+        {
+            "name": "Launch (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/app.exe",
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "preLaunchTask": "Odin Build",
+        }
+    ]
+}

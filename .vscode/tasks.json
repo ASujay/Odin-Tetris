@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "windows": {
+                "command": "odin",
+                "args": ["build", ".", "-out:app.exe", "-debug"]
+            },
+            "label": "Odin Build",
+            "type": "shell",
+            "command": "odin",
+            "args": ["build", ".", "-out:app", "-debug"]
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "odin",
+            "args": ["run", ".", "-debug"]
+        }
+    ]
+}
